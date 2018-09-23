@@ -1,2 +1,2 @@
-# Web-design
-Here is my homework 
+№1 Creation of static web-site using XHTML and CSS
+
