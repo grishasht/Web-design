@@ -1,0 +1,52 @@
+.hdr {
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+._menu {
+	float: left;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	font-size: 20px;
+	padding: 5% 0 5% 0;
+
+}
+
+.cont {
+	float: left;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+.third {
+	width: 25%;
+	#float: left;
+	#margin-right: 23px;
+}
+
+.add {
+	background: url(add.png);
+	background-size: 100%;
+	height: 80%;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+.colont {
+	height: 20%;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+	text-align: center;
+}
+
+.ref {
+	color: none;
+	text-decoration: none;
+}
