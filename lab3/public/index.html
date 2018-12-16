@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<title>Lab 2</title>
+		<link href="stylesheets/style.css" rel="stylesheet">
+		<script type="text/x-template" id="item-template">
+  <li>
+    <div
+      :class="{bold: isFolder || isRoot}"
+      @click="toggle">
+      {{ model[0] }}
+      <span v-if="isFolder || isRoot">[{{ open ? '-' : '+' }}]</span>
+    </div>
+    <ul v-show="open">
+      <item
+        class="item"
+		v-for="item in model[1]"
+        :model="item">
+      </item>
+	  <li class="add" @click="addChild" v-if="create != true">+</li>
+	  <input v-model="str" v-if="create == true">
+	  <li :class="{bold: isFolder}" 
+	  @click="addElement" v-if="create == true">Додати</li>
+    </ul>
+	<ul>
+	</ul>
+  </li>
+		</script>
+
+	</head>
+	<body>
+	<h3>Дерево записів</h3>
+	<hr>
+	<ul id="demo">
+  <item
+    class="item"
+    :model="treeData">
+  </item>
+</ul>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="javascripts/main_vue.js"></script>
+	</body>
+</html>

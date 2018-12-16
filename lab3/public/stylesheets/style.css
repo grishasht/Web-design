@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+tree {
+	margin: 15px;
+	}
+	.end {
+	color: black;
+	cursor: default;
+	text-decoration: none;
+	}
+.folder {
+	color: blue;
+	text-decoration: underline;
+}
+.item {
+  cursor: pointer;
+}
+.bold {
+  color: blue;
+}
